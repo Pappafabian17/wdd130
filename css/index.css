@@ -1,0 +1,28 @@
+main {
+  width: 840px;
+  img {
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom, #71babc 0%, #86bee1 100%) 1;
+  }
+}
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+p {
+  padding: 0;
+}
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
