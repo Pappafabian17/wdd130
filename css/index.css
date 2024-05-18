@@ -3,8 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-main {
-  width: 840px;
+
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(117, 117, 206);
+}
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Definimos dos columnas, una con el doble de ancho que la otra */
+  gap: 20px;
+}
+
+main h1 {
+  border-bottom: 0.2rem solid rgb(117, 117, 206);
 }
 main img {
   border: 10px solid transparent;
@@ -32,8 +60,8 @@ aside h2 {
 p {
   padding: 30px;
 }
+
 footer {
-  margin-top: 20px;
   border-top: 1px solid #333;
   text-align: center;
 }
