@@ -142,6 +142,134 @@ article img {
   margin-left: 10px;
 }
 
+
+
+
+/* Contact us */
+.contact-main{
+  display:flex;
+  flex-direction: column;
+  
+}
+.contact-main h1{
+  color: #6279b8;
+}
+.info-container{
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.info-container p span{
+  font-weight: 600;
+}
+.company-info-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+.message{
+  background-color: #8ea4d25b;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.employees-section{
+  display: flex;
+  flex-direction: column;
+}
+.employees-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.employee{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 85vh;
+
+}
+.employee img{
+  border-radius: 50%;
+  width: 227px;
+  height: auto;
+}
+.name{
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #6279b8;
+}
+
+.employee-description{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Form */
+.form-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.contact-form label {
+  margin: 10px 0 5px;
+  display: block;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contact-form input[type="radio"] {
+  margin-right: 10px;
+}
+.contact-form .radio-group label {
+  display: inline-block;
+  margin-right: 15px;
+}
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+/* End contact us  */
+
 footer {
   display: flex;
   align-items: center;
