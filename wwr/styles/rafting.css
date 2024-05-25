@@ -7,7 +7,7 @@ body {
 
 :root {
   --primary-color: #8ea4d2;
-  --secondary-color: #6279b8;
+  --secondary-color: #425894;
   --accent1-color: #496f5d;
   --accent2-color: #4c9f70;
 
@@ -15,7 +15,7 @@ body {
   --paragraph-font: "roboto", serif;
 
   --nav-background-color: #4c9f70;
-  --nav-link-color: #23372e;
+  --nav-link-color: #0A100B;
   --nav-hover-link-color: #496f5d;
   --nav-hover-background-color: #8ea4d2;
 }
@@ -152,7 +152,7 @@ article img {
   
 }
 .contact-main h1{
-  color: #6279b8;
+  color: #425894;
 }
 .info-container{
   display: flex;
@@ -204,7 +204,7 @@ article img {
 .name{
   font-size: 1.7rem;
   font-weight: 600;
-  color: #6279b8;
+  color: #425894;
 }
 
 .employee-description{
@@ -257,7 +257,7 @@ article img {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #2E662F;
   color: white;
   border: none;
   border-radius: 3px;

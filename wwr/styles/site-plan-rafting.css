@@ -6,7 +6,7 @@ body{
 }
 :root{
     --primary-color:#8EA4D2;
-    --secondary-color:#6279B8;
+    --secondary-color:#425894;
     --accent1-color:#496F5D;
     --accent2-color:#4C9F70;
 
@@ -15,7 +15,7 @@ body{
 
     --nav-background-color:#4C9F70;
     --nav-link-color:#496F5D;
-    --nav-hover-link-color:#6279B8;
+    --nav-hover-link-color:#425894;
     --nav-hover-background-color:#8EA4D2;
 }
 
