@@ -15,7 +15,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
-  background-color: rgb(117, 117, 206);
+  background-color: #3e3eb1;
 }
 nav a {
   display: block;
@@ -29,10 +29,20 @@ nav a {
   display: grid;
   grid-template-columns: 2fr 1fr; /* Definimos dos columnas, una con el doble de ancho que la otra */
   gap: 20px;
+  direction: rtl;
 }
-
+ul {
+  list-style: none;
+}
+ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.grid > main {
+  direction: ltr;
+}
 main h1 {
-  border-bottom: 0.2rem solid rgb(117, 117, 206);
+  border-bottom: 0.2rem solid #3e3eb1;
 }
 main img {
   border: 10px solid transparent;
