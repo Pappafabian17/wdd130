@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900");
+
 body {
   font-family: var(--paragraph-font);
   /* max-width:960px;
@@ -266,11 +267,99 @@ article img {
 
 /* TRIPS    */
 .invite-action-container {
-  background-repeat: no-repeat;
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  background: url("https://cdn.pixabay.com/photo/2017/11/15/13/27/river-2951997_640.jpg")
+    no-repeat center center fixed;
   background-size: cover;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url("https://cdn.pixabay.com/photo/2017/11/15/13/27/river-2951997_640.jpg")
-      no-repeat center center fixed;
+  height: 100vh; /* O la altura que desee */
+  color: white; /* Para que el texto sea visible sobre la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centrar el texto */
+}
+
+.invite-action-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad */
+  z-index: 1;
+}
+
+.invite-action-container .content {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté por encima de la capa de opacidad */
+}
+.action-button {
+  background-color: #45a049;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.trips-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.each-trip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.each-trip img {
+  max-width: 375px;
+  height: 250px;
+}
+
+/* table */
+.tbody {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.trips-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.trips-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.trips-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.trips-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
 }
 
 /* end of TRIPS    */
