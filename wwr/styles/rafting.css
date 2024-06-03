@@ -296,6 +296,7 @@ article img {
 .invite-action-container .content {
   position: relative;
   z-index: 2; /* Asegura que el texto esté por encima de la capa de opacidad */
+  width: 100%;
 }
 .action-button {
   background-color: #45a049;
@@ -369,8 +370,100 @@ article img {
 
 /* HOME */
 .home-image {
-  background: url("https://cdn.pixabay.com/photo/2017/11/15/13/27/river-2951997_640.jpg")
+  background: url("https://vulcanopro.s3.amazonaws.com/images/lar_2qo7sws7KFp7jBDL7yfNIhkQvWve3YovNNvf873q.jpeg")
     no-repeat center center fixed;
+}
+.home-title {
+  position: relative;
+}
+.subtitle-desc {
+  font-weight: 600;
+}
+
+.newsletter-signup {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.newsletter-signup h2 {
+  margin-top: 0;
+}
+
+.newsletter-signup form {
+  display: grid;
+  gap: 10px;
+}
+
+.newsletter-signup label {
+  text-align: left;
+}
+
+.newsletter-signup input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #0056b3;
+}
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.cta {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cta .cta-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta .cta-button:hover {
+  background-color: #218838;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.grid-item h2 {
+  margin-top: 10px;
+}
+
+.grid-item p {
+  margin: 10px 0;
 }
 /* END OFHOME */
 footer {
